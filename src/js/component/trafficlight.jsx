@@ -7,7 +7,7 @@ const TrafficLight = () => {
     setColor(selectedColor);
   };
 
-  const manualchangeColor = () => {
+  const manualChangeColor = () => {
     if (color === "red") {
       setColor("yellow");
     } else if (color === "yellow") {
@@ -34,7 +34,7 @@ const TrafficLight = () => {
       </div>
       <div className="stick">
         <div className="buttonChangeColor">
-          <button className="pressButton" onClick={manualchangeColor}></button>
+          <button className="pressButton" onClick={manualChangeColor}></button>
         </div>
       </div>
     </>
