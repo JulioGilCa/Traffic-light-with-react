@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const TrafficLight = () => {
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState("");
 
   const pushColor = (selectedColor) => {
     setColor(selectedColor);
@@ -20,15 +20,15 @@ const TrafficLight = () => {
     <>
       <div className="traffic-light">
         <div
-          className={`light red ${color === "red" ? "active" : ""}`}
+          className={`light red ${color === "red" ? "active-red" : ""}`}
           onClick={() => pushColor("red")}
         ></div>
         <div
-          className={`light yellow ${color === "yellow" ? "active" : ""}`}
+          className={`light yellow ${color === "yellow" ? "active-yellow" : ""}`}
           onClick={() => pushColor("yellow")}
         ></div>
         <div
-          className={`light green ${color === "green" ? "active" : ""}`}
+          className={`light green ${color === "green" ? "active-green" : ""}`}
           onClick={() => pushColor("green")}
         ></div>
       </div>
