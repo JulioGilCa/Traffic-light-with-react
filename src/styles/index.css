@@ -44,16 +44,24 @@ body {
   background-color: red;
 }
 
-.yellow {
+.active-red {
+    box-shadow: 0 0 10px 15px rgba(255, 0, 0, 0.445);
+}
+
+.yellow{
   background-color: rgb(252, 194, 5);
+}
+
+.active-yellow {
+    box-shadow: 0 0 10px 15px rgba(252, 194, 5, 0.514);
 }
 
 .green {
   background-color: green;
 }
 
-.active {
-  box-shadow: 0 0 10px 15px rgb(255, 255, 255);
+.active-green {
+    box-shadow: 0 0 10px 15px rgba(0, 128, 0, 0.418);
 }
 
 .pressButton {
